@@ -1,6 +1,14 @@
 # App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.0.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.0. But developed using Angular version 16. <br>
+In this project ,there are separate login pages for Admins and Users, each with their own dashboards:<br>
+users are the primary audience:<br>
+Default route → /user-login.
+Admin Login Page (/admin-login) → Redirects to Admin Dashboard (/admin-dashboard)<br>
+User Login Page (/user-login) → Redirects to User Dashboard (/user-dashboard)<br>
+Only Admins should access /admin-dashboard. If a User tries to access it, they should be redirected to /admin-login.<br>
+If a non-logged-in user tries to access any dashboard directly, they should be redirected to their respective login page./user-login if he is accessing user-dashboard,else /admin-login if accessing admin-dashboard<br>
+After logging in, the user should be redirected to their dashboard based on their role.
 
 ## Development server
 
